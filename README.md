@@ -70,6 +70,29 @@ This web application allows users to store and manage information about their ca
 
 ## Usage
 
+Adding a New Car
+
+Step 1:
+
+Click the Add Car Button
+
+    ![image](./images/addCar1.PNG)
+
+Step 2:
+
+Fill in all the Input fields
+
+    ![image](./images/addCar2.PNG)
+
+Step 3:
+
+Click the Submit Button
+
+    ![image](./images/addCar3.PNG)
+
+
+
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any features, bug fixes, or enhancements.
