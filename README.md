@@ -3,6 +3,7 @@
 - [Description](#description)
 - [Features](#features)
 - [Installation](#setup-and-installation)
+- [Usage](#usage)
 - [Credit](#credit)
 
 ## Description
@@ -66,6 +67,8 @@ This web application allows users to store and manage information about their ca
 
 7. **Access the application**:
     - Open your browser and go to `http://localhost:3000` to access the frontend interface.
+
+## Usage
 
 ## Contributing
 
