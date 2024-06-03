@@ -1,4 +1,11 @@
-# Car Storage Web Application
+# Car Inventory Web Application
+
+- [Description](#description)
+- [Features](#features)
+- [Installation](#setup-and-installation)
+- [Credit](#credit)
+
+## Description
 
 This web application allows users to store and manage information about their cars in a secure online database. It provides a user-friendly interface for adding, updating, and viewing car details. Built with a modern frontend and robust backend, the application ensures seamless performance and data integrity.
 
@@ -17,7 +24,7 @@ This web application allows users to store and manage information about their ca
 - **Environment Management**: dotenv for environment variables
 - **Version Control**: Git
 
-## Setup and Installation
+## Setup and Installation 
 
 1. **Clone the repository**:
     ```bash
@@ -63,3 +70,7 @@ This web application allows users to store and manage information about their ca
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any features, bug fixes, or enhancements.
+
+## Credit
+[Will Hamilton](https://github.com/CodingHammy) - Author
+
