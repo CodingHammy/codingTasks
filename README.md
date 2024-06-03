@@ -2,9 +2,9 @@
 
 - [Description](#description)
 - [Features](#features)
+- [Credit](#credit)
 - [Installation](#setup-and-installation)
 - [Usage](#usage)
-- [Credit](#credit)
 
 ## Description
 
@@ -24,6 +24,13 @@ This web application allows users to store and manage information about their ca
 - **Database**: MongoDB
 - **Environment Management**: dotenv for environment variables
 - **Version Control**: Git
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any features, bug fixes, or enhancements.
+
+## Credit
+[Will Hamilton](https://github.com/CodingHammy) - Author
 
 ## Setup and Installation 
 
@@ -70,33 +77,74 @@ This web application allows users to store and manage information about their ca
 
 ## Usage
 
-Adding a New Car
+**Adding a New Car**
 
 Step 1:
+Click the Add Car Button.
 
-Click the Add Car Button
-
-    ![image](./images/addCar1.PNG)
+![image](./images/addCar1.PNG)
 
 Step 2:
+Fill in all the Input fields.
 
-Fill in all the Input fields
-
-    ![image](./images/addCar2.PNG)
+![image](./images/addCar2.PNG)
 
 Step 3:
+Click the Submit Button.
 
-Click the Submit Button
+![image](./images/addCar3.PNG)
 
-    ![image](./images/addCar3.PNG)
+**Edit A Single Car**
 
+Step One:
+Select the car you wish to edit by clicking on the corresponding edit Button.
 
+![image](./images/edit1.PNG)
 
+Step Two:
+Fill in the Input fields that you wish to update.
 
-## Contributing
+![image](./images/edit2.PNG)
 
-Contributions are welcome! Please open an issue or submit a pull request for any features, bug fixes, or enhancements.
+Step Three:
+Click the Submit Button.
 
-## Credit
-[Will Hamilton](https://github.com/CodingHammy) - Author
+![image](./images/edit3.PNG)
 
+**Deleting a Car**
+
+Select the car you wish to delete by clicking on the corresponding Delete Button.
+
+![image](./images/delete.PNG)
+
+**Editing multiple Car**
+
+Step One:
+
+Click Edit Many button on Nav.
+
+![image](./images/editMany1.PNG)
+
+Step Two:
+
+Check the checkboxes of the Cars you wish to edit.
+
+![image](./images/editMany2.PNG)
+
+Step Three:
+
+Click Confirm after selecting desired cars
+
+![image](./images/confirm.PNG)
+
+Step Four:
+
+Fill in inputs fields in the cars you wish to edit
+
+![image](./images/editMany3.PNG)
+
+Step Five:
+
+Click confirm after all edits have been made
+
+![image](./images/editMany4.PNG)
