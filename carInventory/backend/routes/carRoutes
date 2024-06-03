@@ -1,0 +1,12 @@
+const express = require('express')
+const router = express.Router()
+
+const { getAllCars, createCar, deleteCar, updateOneCar, updateManyCars } = require('../controllers/carController')
+
+router.get('/', getAllCars)
+router.post('/', createCar)
+router.delete('/:id', deleteCar)
+router.put('/:id', updateOneCar)
+router.put('/:id/many', updateManyCars)
+
+module.exports = router

@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  border: 1px solid rgba(2 2 2/ .2);
+  background-color: rgba(255 255 255/ .8);
+  flex-direction: column;
+  position: relative;
+
+}
+
+.info {
+  padding: calc(1em - 2px) 2em 0.5em;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20%;
+}
+
+.modelMake_heading {
+  font-size: 1.4vw;
+}
+
+
+.ownerInfo {
+  position: absolute;
+  left: 30%;
+  font-size: 2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin-top: -.2vw;
+}
+
+
+
+.checkbox_div {
+  position: absolute;
+  right: 20%;
+  top: 40%;
+  transform: scale(1.5);
+}
+
+.buttons {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 20px;
+  top: 25%;
+  right: 20px;
+}

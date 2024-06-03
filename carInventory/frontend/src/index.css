@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.buttonPositive,
+.buttonNegative,
+.buttonEdit,
+.buttonCancel {
+  color: white;
+  padding: 6px;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-weight: 900;
+}
+
+.buttonPositive {
+  background-color: rgba(0, 128, 0, 0.6);
+}
+
+.buttonPositive:hover {
+  background-color: rgba(0, 128, 0, 1);
+}
+
+.buttonNegative {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.buttonNegative:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.buttonNegative:disabled {
+  background-color: rgba(255, 0, 0, .2);
+
+}
+
+
+.buttonEdit {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.buttonEdit:hover {
+  background-color: rgba(0, 0, 255, 0.9);
+}
+
+.buttonCancel {
+  background-color: orange;
+}
+
+.buttonCancel:hover {
+  background-color: rgb(223, 145, 1);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

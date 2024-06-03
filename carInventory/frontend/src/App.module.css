@@ -1,0 +1,25 @@
+.container {
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+
+
+.nav {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: lightslategray;
+  height: 100px;
+}
+
+.header {
+  font-size: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 2vw;
+  padding-left: 10%;
+}

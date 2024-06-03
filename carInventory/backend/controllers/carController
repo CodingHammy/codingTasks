@@ -1,0 +1,74 @@
+const Car = require('../models/carSchema')
+
+exports.getAllCars = async (req, res) => {
+  try {
+    const cars = await Car.find()
+    res.json(cars)
+  } catch (error) {
+    console.error('error while getting cars', error)
+  }
+}
+
+exports.createCar = async (req, res) => {
+  try {
+    const { make, model, owner, registration, address } = req.body
+    const newCar = new Car({
+      make,
+      model,
+      owner,
+      registration,
+      address,
+    })
+    const savedCar = await newCar.save()
+    res.status(201).json(savedCar)
+  } catch (erorr) {
+    console.error('Error saving car:', error)
+  }
+}
+
+exports.deleteCar = async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleteCar = await Car.findByIdAndDelete(id)
+    if (!deleteCar) {
+      return res.status(404).json({ message: 'Car not Found or has already been deleted' })
+    }
+    res.status(200).json({ message: 'Car deleted successfully' })
+  } catch (error) {
+    console.error('Error deleting Car:', error)
+  }
+}
+
+exports.updateOneCar = async (req, res) => {
+  const { id } = req.params
+  const { make, model, owner, registration, address } = req.body
+  try {
+    const updatedCar = await Car.findByIdAndUpdate(id, { make, model, owner, registration, address }, { new: true })
+    res.json(updatedCar)
+  } catch (error) {
+    console.error('Error updating car', error)
+    res.status(500).send('Internal Server Error')
+  }
+}
+
+// Controller function to update many cars by their IDs
+exports.updateManyCars = async (req, res) => {
+  try {
+    const carId = req.params.id
+    const updateData = req.body
+
+    const updatedCar = await Car.findByIdAndUpdate(carId, updateData, {
+      new: true,
+      runValidators: true,
+    })
+
+    if (!updatedCar) {
+      return res.status(404).send('Car not found')
+    }
+
+    res.status(200).send(updatedCar)
+  } catch (error) {
+    console.error('Error updating car:', error)
+    res.status(500).send('Internal Server Error')
+  }
+}
