@@ -38,10 +38,12 @@ This web application allows users to store and manage information about their ca
     ```
 
 4. **Set up environment variables**:
-    - Create a `.env` file in the `backend` directory with the following content:
-        ```plaintext
-        MONGODB_URI=your_mongodb_uri_here
-        ```
+- Create a `.env` file in the `backend` directory with the following content:
+
+  
+     ```plaintext
+     MONGODB_URI=your_mongodb_uri_here
+     ```
 
 5. **Run the backend server**:
     ```bash
